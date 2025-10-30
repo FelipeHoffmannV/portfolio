@@ -1,0 +1,169 @@
+:root {
+    --primary: #6f42c1;
+    --secondary: #b07cf7;
+    --dark: #2b2b2b;
+    --light: #f8f9fa;
+    --text: #2b2b2b;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Navbar */
+body.dark .navbar {
+  background-color: #1f1f1f !important;
+  border-bottom: 1px solid #333;
+}
+body.dark .navbar .nav-link {
+  color: #f1f1f1 !important;
+}
+body.dark .navbar .nav-link:hover {
+  color: var(--secondary) !important;
+}
+
+/* Botões */
+body.dark .btn-outline-primary {
+  color: #f1f1f1;
+  border-color: #b07cf7;
+}
+body.dark .btn-outline-primary:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+/* Cards e inputs */
+body.dark .card,
+body.dark input,
+body.dark textarea {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #333;
+}
+body.dark .card-title {
+  color: var(--secondary);
+}
+
+body.dark input::placeholder{
+    color: #e9e3ff;
+}
+
+body.dark .pl::placeholder{
+    color: #e9e3ff;
+}
+
+/* Fundo das seções */
+body.dark section {
+  background-color: #000000;
+}
+
+/* Rodapé */
+body.dark footer {
+  background-color: #111;
+}
+
+
+/* BASE */
+body {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    transition: background 0.5s, color 0.5s;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 40%, #e9e3ff 100%);
+    transition: 0.5s;
+}
+body.dark .hero {
+    background: linear-gradient(135deg, #1a1a1a 40%, #2d234d 100%);
+}
+.hero h1 {
+    font-size: 2.8rem;
+}
+.hero .btn-primary {
+    background: var(--primary);
+    border: none;
+}
+.hero .btn-primary:hover {
+    background: var(--secondary);
+}
+
+/* ANIMAÇÕES */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+.fade-up.delay-1 { animation-delay: 0.3s; }
+.fade-up.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* REVEAL AO ROLAR */
+.fade-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PROJETOS */
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: transform 0.4s ease;
+}
+.project-card:hover img {
+    transform: scale(1.05);
+}
+.card-title {
+    color: var(--primary);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+}
+
+/* BOTÕES */
+.btn-primary {
+    background: var(--primary);
+    border: none;
+}
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+/* SECTIONS */
+.section-bg {
+    background: #f8f9fa;
+    transition: background 0.3s;
+}
+body.dark-mode .section-bg {
+    background: #222;
+}
