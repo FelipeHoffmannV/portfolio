@@ -54,6 +54,10 @@ body.dark .pl::placeholder{
     color: #e9e3ff;
 }
 
+body.dark .brand{
+    color: #e9e3ff;
+}
+
 /* Fundo das seções */
 body.dark section {
   background-color: #000000;
